@@ -65,6 +65,15 @@ function promptBuyer(){
                 console.log("Your total is: $" + (price * itemQuantity).toFixed(2));
                 console.log("Thank you for shopping at Bamazon!!");
                 console.log("--------------------------------------------------")
+                newQuantity = (quantityAvail - itemQuantity);
+                connection.query("UPDATE products SET ? WHERE ?",[
+                    {
+                        stock_quantity: newQuantity
+                    },
+                    {
+                        item_id: itemChoice
+                    },
+                ])
             }else{
                 console.log("------------------------------------------------------------")
                 console.log("Sorry, we only have " + quantityAvail + " available.")
