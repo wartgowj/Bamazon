@@ -74,6 +74,7 @@ function promptBuyer(){
                         item_id: itemChoice
                     },
                 ])
+                connection.end();
             }else{
                 console.log("------------------------------------------------------------")
                 console.log("Sorry, we only have " + quantityAvail + " available.")
@@ -89,7 +90,10 @@ function promptBuyer(){
                     if(response.newItem){
                         promptBuyer();
                     }else{
-                        return;
+                        console.log("------------------------------------------------------------")
+                        console.log("Thank you for shopping Bamazon. Have a great day!!")
+                        console.log("------------------------------------------------------------")
+                        connection.end();
                     }
                 })
             }   
