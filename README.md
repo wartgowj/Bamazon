@@ -3,9 +3,9 @@
 A CLI storefront program utilizing Node and MYSQL.
 
 
-CUSTOMER INTERFACE
+**CUSTOMER INTERFACE**
 
-run bamazoncustomer.js to start the customer experience
+run **bamazoncustomer.js** to start the customer experience
 
 The app will automatically display all the items available to purchase.
 
@@ -19,9 +19,9 @@ It will then adjust the item's inventory level in the database.
 
 If there is not enough available to fill the order it will notify the customer and ask if they want to change thier order. 
 
-MANAGER INTERFACE
+**MANAGER INTERFACE**
 
-run bamazonmanager.js to start the manager experience
+run **bamazonmanager.js** to start the manager experience
 
 The app will display the options the manager can choose from:
 
